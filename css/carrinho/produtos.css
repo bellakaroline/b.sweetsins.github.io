@@ -1,0 +1,145 @@
+/* Produtos */
+
+.produto-bg {
+  background: var(--cor-p4);
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.produto {
+  display: flex;
+  place-content: center;
+  margin-bottom: 80px;
+}
+
+.produto img {
+  width: 260px;
+  border-radius: 3px 0 0 3px;
+  box-shadow: 0 1px 0px 1px rgba(0, 0, 0, 0.1);
+}
+
+.produto-conteudo {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  background: var(--cor-bg) url("../../img/coracinho.svg") no-repeat top 20px
+    right 20px;
+  padding-left: 40px;
+  padding-right: 80px;
+  border-radius: 0 3px 3px 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: var(--cor-p3);
+  font-weight: 800;
+}
+
+.colher {
+  font-size: 0.875rem;
+  color: var(--cor-p3);
+  font-weight: 600;
+}
+
+.produto-conteudo h2 {
+  font-size: 2rem;
+  color: var(--cor-p2);
+}
+
+.valores li {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.valores li + li {
+  border-top: 1px solid var(--cor-p4);
+}
+
+.valores-span {
+  padding-right: 30px;
+  margin-left: 200px;
+  color: var(--cor-p3);
+  font-weight: 800;
+}
+
+/* Checkbox */
+
+.super-caixinha .caixinha {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.caixinha .div-caixinha {
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.caixinha .div-caixinha .caixinha-botao {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 3px;
+  background-color: var(--cor-p5);
+  border: 1px solid var(--cor-p3);
+}
+
+.caixinha .div-caixinha input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.caixinha .div-caixinha .caixinha-botao::before {
+  content: "";
+}
+
+.caixinha .div-caixinha input:checked + .caixinha-botao {
+  background-color: var(--cor-p5);
+}
+
+.caixinha .div-caixinha input:checked + .caixinha-botao::before {
+  position: absolute;
+  left: 9px;
+  top: 3px;
+  width: 8px;
+  height: 16px;
+  border: solid var(--cor-p1);
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  transition: 0.3s;
+}
+
+/* Responsivo */
+
+@media (max-width: 800px) {
+  .produto-bg {
+    padding-top: 10px;
+  }
+
+  .produto {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .produto-conteudo {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: max-content;
+  }
+
+  .colher {
+    padding-top: 20px;
+    font-size: 0.785rem;
+  }
+  .produto-conteudo h2 {
+    font-size: 1.7rem;
+    max-width: 10ch;
+  }
+
+  .valores-span {
+    margin-left: 50px;
+  }
+}

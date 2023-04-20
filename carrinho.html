@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+
+  <title>Sweet Sins</title>
+</head>
+
+<body id="carrinho">
+
+  <!-- Header -->
+
+  <header class="header-bg">
+    <div class="header container">
+      <a href="./index.html"><img src="img/logo-bege.svg" alt="Sweet Sins"></a>
+
+      <nav aria-label="primaria">
+        <ul class="header-menu">
+          <li><a href="./index.html">Início</a></li>
+          <li><a href="./cardapio.html">Cardápio</a></li>
+          <li><a href="./carrinho.html">Carrinho</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Termos -->
+
+  <div class="titulo">
+    <h1>Carrinho</h1>
+  </div>
+
+  <section class="carrinho-bg" id="carrinho">
+    <div class="carrinho container">
+
+      <div class="carrinho-conteudo">
+        <section>
+          <table>
+            <thead>
+              <tr>
+                <th>Produto</th>
+                <th>Valor</th>
+                <th>Quantidade</th>
+                <th>Total</th>
+                <th>-</th>
+              </tr>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="product">
+                    <img src="./img/ovo-brigadeiro.jpg">
+                    <div class="info">
+                      <div class="name">Ovo de colher sabor Brigadeiro</div>
+                      <div class="categoria">250g</div>
+                    </div>
+                  </div>
+                </td>
+                <td>R$ 45,00</td>
+                <td>
+                  <div class="qty">
+                    <button><i class='bx bx-minus'></i></button>
+                    <span>2</span>
+                    <button><i class='bx bx-plus'></i></button>
+                  </div>
+                </td>
+                <td>R$ 90,00</td>
+                <td>
+                  <button class="remove"><i class='bx bx-x'></i></button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="product">
+                    <img src="./img/ovo-caipirinha.jpg">
+                    <div class="info">
+                      <div class="name">Ovo de colher sabor Mousse de Caipirinha</div>
+                      <div class="categoria">320g</div>
+                    </div>
+                  </div>
+                </td>
+                <td>R$ 55,00</td>
+                <td>
+                  <div class="qty">
+                    <button><i class='bx bx-minus'></i></button>
+                    <span>1</span>
+                    <button><i class='bx bx-plus'></i></button>
+                  </div>
+                </td>
+                <td>R$ 55,00</td>
+                <td>
+                  <button class="remove"><i class='bx bx-x'></i></button>
+                </td>
+              </tr>
+            </tbody>
+            </thead>
+          </table>
+        </section>
+
+      </div>
+
+
+      <div class="escolha-mais container">
+        <ul>
+          <li>Total: R$ 145,00</li>
+          <li>
+            <label for="cupom">Cupom de desconto</label>
+            <input type="text" placeholder="Insira seu cupom">
+          </li>
+          <li>
+            <span> <i class='bx bx-arrow-back'></i><a class="escolher" href="./cardapio.html">ESCOLHER MAIS PRODUTOS</a></span>
+          </li>
+
+        </ul>
+        <div class="botao container">
+          <a href="./carrinho.html">Finalizar compra</a>
+        </div>
+      </div>
+
+
+    </div>
+    <!-- <div class="botao container">
+      <a href="./carrinho.html">Finalizar compra</a>
+    </div> -->
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer class="footer-bg">
+    <div class="footer container">
+      <a href="#"><img class="logo" src="./img/logo-bege.svg" alt="Sweet Sins"></a>
+
+      <div class="footer-contato">
+        <h3 class="footer-h3">Contato</h3>
+        <ul>
+          <li><a href="tel:+55679999-9999">+55 67 9999-9999</a></li>
+          <li><a href="mailto:contato@sweetsins.com">contato@sweetsins.com</a></li>
+        </ul>
+
+        <div class="footer-redes">
+          <div>
+            <a href="https://www.instagram.com/sweetsinscg" target="_blank"><span class="icon icon-insta"></span></a>
+            <a href="https://www.facebook.com/profile.php?id=100069901911855&mibextid=ZbWKwL" target="_blank"><span class="icon icon-face"></span></a>
+          </div>
+
+        </div>
+      </div>
+
+  </footer>
+
+  <div class="footer-bg2">
+    <div class="footer-informacoes container">
+      <nav>
+        <ul>
+          <h3 class="footer2-h3">Informações</h3>
+          <li><a href="./cardapio.html">Cardápio</a></li>
+          <li><a href="./termos.html">Termos e Condições</a></li>
+          <li><a href="./entregaeretirada.html">Entregas e Retiradas</a></li>
+        </ul>
+      </nav>
+
+      <nav>
+        <ul>
+          <h3 class="footer2-h3">Endereço</h3>
+          <li>Rua Ali Perto, 542 - Centro</li>
+          <li>Campo Grande - MS</li>
+          <li>79000-00</li>
+        </ul>
+      </nav>
+
+      <nav class="horario">
+        <ul>
+          <h3 class="footer2-h3">Horário de Funcionamento</h3>
+          <li>De segunda a sexta feira</li>
+          <li>Das 08h às 18h</li>
+        </ul>
+      </nav>
+    </div>
+
+    <p class="direitos container">Sweet Sins © Todos os direitos reservados.</p>
+
+
+</body>
+
+</html>

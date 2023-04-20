@@ -1,0 +1,153 @@
+.footer-bg {
+  background: var(--cor-bg2);
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 250px;
+  color: var(--cor-p4);
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+}
+
+.footer-h3 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.footer-contato ul {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-contato a:hover {
+  color: var(--cor-p5);
+}
+
+/* Icones */
+
+.icon {
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+}
+
+.icon-insta {
+  background-image: url('../../img/redes-sociais/instagram.svg');
+}
+
+.icon-insta:hover, 
+.icon-ista:focus {
+  background-image: url('../../img/redes-sociais/instagram-branco.svg');
+}
+
+.icon-face {
+  background-image: url('../../img/redes-sociais/facebook.svg');
+}
+
+.icon-face:hover, 
+.icon-face:focus {
+  background-image: url('../../img/redes-sociais/facebook-branco.svg');
+}
+
+/* Outro footer */
+
+.footer-bg2 {
+  background: var(--cor-bg);
+}
+
+.footer2-h3 {
+  color: var(--cor-p2);
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.footer-informacoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: var(--cor-p3);
+  align-content: flex-start;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer-informacoes li {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.footer-informacoes a:hover {
+  color: var(--cor-p1);
+}
+
+.direitos {
+  color: var(--cor-p2);
+  font-weight: 700;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+
+/* Responsivo */
+
+
+@media (max-width: 800px) {
+
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .footer-h3 {
+    font-size: 1rem;
+  }
+
+  .footer-contato ul {
+    font-size: 0.875rem;
+  }
+
+  .footer-informacoes {
+    display: grid;
+    gap: 30px;
+  }
+
+  .footer2-h3,
+  .direitos {
+    font-size: 0.875rem;
+  }
+
+  .footer-informacoes li {
+    font-size: 0.75rem;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .footer {
+    grid-template-columns: 1fr;
+    padding-bottom: 10px;
+  }
+
+  .footer-h3 {
+    font-size: 0.75rem;
+  }
+
+  .footer-contato ul {
+    font-size: 0.75rem;
+  }
+  
+  .icon {
+    width: 21px;
+    height: 21px;
+  }
+
+}

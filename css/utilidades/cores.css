@@ -1,0 +1,12 @@
+:root { 
+  --cor-p1: #FC675B;
+  --cor-p2: #593223;
+  --cor-p3: #7E4C39;
+  --cor-p4: #F8D696;
+  --cor-p5: #FAFAFA;
+
+  --cor-bg: #FFE7BA;
+  --cor-bg2: linear-gradient(180deg, #593223 0%, rgba(49, 18, 8, 0.94) 97.68%);
+  --cor-bg3: linear-gradient(180deg, #FF847B 0%, #DE5953 100%);
+}
+

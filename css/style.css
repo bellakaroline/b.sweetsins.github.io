@@ -1,0 +1,16 @@
+@import "./global/global.css";
+@import "./global/header.css";
+@import "./global/footer.css";
+
+@import "./introducao/introducao.css";
+@import "./introducao/carrossel.css";
+@import "./introducao/cardapio.css";
+
+@import "./termos/termos.css";
+@import "./termos/entregaeretirada.css";
+
+@import "./carrinho/produtos.css";
+@import "./carrinho/carrinho.css";
+/* @import "./carrinho/teste.css"; */
+
+@import "./utilidades/cores.css";

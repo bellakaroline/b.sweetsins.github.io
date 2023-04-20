@@ -1,0 +1,94 @@
+.carrossel-bg {
+  background: var(--cor-bg);
+}
+
+/* desconto */
+
+.carrossel-desconto {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.desconto {
+  display: inline-block;
+  background: var(--cor-bg2);
+  color: var(--cor-p4);
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 10px 30px;
+}
+
+/* imagens */
+
+.ovo {
+  width: 172px;
+  height: 213px;
+}
+
+.seta {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+
+.carrossel-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* Responsivo */
+
+@media (max-width: 800px) {
+
+  .carrossel-lista {
+    gap: 10px;
+  }
+  .carrossel-desconto {
+    gap: 10px;
+  }
+
+  .desconto {
+    font-size: 0.875rem;
+    padding: 5px 10px;
+    align-content: center;
+  }
+
+  .ovo {
+    width: 130px;
+    height: 200px;
+  }
+
+  
+
+}
+
+@media (max-width: 600px) {
+  .carrossel-desconto {
+    gap: 10px;
+    padding-top: 30px;
+  }
+
+  .desconto {
+    font-size: 0.625rem;
+    align-content: center;
+  }
+
+  .ovo {
+    width: 80px;
+    height: 50px;
+  }
+
+  .seta {
+    width: 30px;
+    height: 30px;
+  }
+}
