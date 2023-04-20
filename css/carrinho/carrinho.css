@@ -29,7 +29,7 @@ table {
 }
 
 thead th {
-  font-size: 20px;
+  font-size: 1.25rem;
   text-align: left;
   color: var(--cor-p2);
   font-weight: 800;
@@ -138,7 +138,6 @@ button i {
   margin-top: 20px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   background-color: var(--cor-bg);
-  
 }
 
 .escolha-mais li {
@@ -185,10 +184,19 @@ button i {
   }
 
   .name {
+    font-size: 0.75rem;
     max-width: 10ch;
   }
 
   .qty button {
-    padding: 2px 0;
+    padding: 1px 0;
+  }
+
+  thead th {
+    font-size: 1rem;
+  }
+
+  td {
+    font-size: 0.75rem;
   }
 }
