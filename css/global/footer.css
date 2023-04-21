@@ -30,32 +30,9 @@
 }
 
 /* Icones */
-
-.icon {
-  display: inline-block;
-  margin-right: 20px;
-  margin-top: 10px;
-  width: 30px;
-  height: 30px;
-  background-size: cover;
-}
-
-.icon-insta {
-  background-image: url('../../img/redes-sociais/instagram.svg');
-}
-
-.icon-insta:hover, 
-.icon-ista:focus {
-  background-image: url('../../img/redes-sociais/instagram-branco.svg');
-}
-
-.icon-face {
-  background-image: url('../../img/redes-sociais/facebook.svg');
-}
-
-.icon-face:hover, 
-.icon-face:focus {
-  background-image: url('../../img/redes-sociais/facebook-branco.svg');
+.footer-redes {
+  display: flex;
+  gap: 20px;
 }
 
 /* Outro footer */
@@ -96,12 +73,9 @@
   padding-bottom: 40px;
 }
 
-
 /* Responsivo */
 
-
 @media (max-width: 800px) {
-
   .logo {
     width: 150px;
     height: 150px;
@@ -128,7 +102,6 @@
   .footer-informacoes li {
     font-size: 0.75rem;
   }
-
 }
 
 @media (max-width: 600px) {
@@ -144,10 +117,9 @@
   .footer-contato ul {
     font-size: 0.75rem;
   }
-  
+
   .icon {
     width: 21px;
     height: 21px;
   }
-
 }
